@@ -19,7 +19,7 @@ Terraform
 2) region
 
 
-
+```
 terraform {
   backend "s3" {
     bucket         = "technologiesoutcomes-terraform-backend"
@@ -29,7 +29,7 @@ terraform {
     dynamodb_table = "technologiesoutcomes-3tier-terraform-backend"
   }
 }
-
+```
 Locking mechanism
 
 Terraform locking of state
