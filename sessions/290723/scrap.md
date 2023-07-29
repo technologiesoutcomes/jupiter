@@ -19,6 +19,23 @@ Terraform
 2) region
 
 
+
+main.tf
+```
+provider "aws" {
+  region = "eu-west-1"
+}
+
+resource "aws_s3_bucket" "demos3" {
+  bucket = "my1stbtfbucketvickatetete"
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+
+}
+```
+backend.tf
 ```
 terraform {
   backend "s3" {
