@@ -1,0 +1,94 @@
+2407  mkdir exercise2
+ 2408  cd exercise2
+ 2409  ls -ltr
+ 2410  ls -la
+ 2411  ls-la
+ 2412  ls -latr
+ 2413  vim main.tf
+ 2414  ls -la
+ 2415  cat main.tf
+ 2416  ls -lsa
+ 2417  vim main.tf
+ 2418  clear
+ 2419  ls -la
+ 2420  cat main.tf
+ 2421  terraform init
+ 2422  ls -la
+ 2423  ls -la .terraform/
+ 2424  ls -la .terraform/providers/
+ 2425  ls -la .terraform/providers/registry.terraform.io/
+ 2426  ls -la .terraform/providers/registry.terraform.io/hashicorp/
+ 2427  vim main.tf
+ 2428  terraform init
+ 2429  vim main.tf
+ 2430  terraform init
+ 2431  vim main.tf
+ 2432  terraform init
+ 2433  ls -ltr .terraform
+ 2434  ls -ltr .terraform/providers/registry.terraform.io/hashicorp/
+ 2435  cat main.tf
+ 2436  vim main.tf
+ 2437  terraform init
+ 2438  terraform plan
+ 2439  vim main.tf
+ 2440  terraform plan
+ 2441  terraform apply
+ 2442  cat main.tf
+ 2443  history
+ 2444  terraform plan
+ 2445  vim main.tf
+ 2446  terraform plan
+ 2447  ls -la
+ 2448  cat main.tf
+ 2449  terraform list
+ 2450  terraform show list
+ 2451  terraform show
+ 2452  terraform apply
+ 2453  terraform show
+ 2454  terraform destroy
+ 2455  vim main.tf
+ 2456  terraform apply
+ 2457  terraform destroy
+ 2458  ls -la
+ 2459  vim backend.tf
+ 2460  terraform init
+ 2461  ls -l
+ 2462  terraform plan
+ 2463  terraform apply
+ 2464  vim backend.tf
+ 2465  ls -ltr
+ 2466  terraform init --force
+ 2467  terraform init -reconfigure
+ 2468  ls -l
+ 2469  rm -rf terraform.tfstate*
+ 2470  terraform init -reconfigure
+ 2471  terraform plan
+ 2472  terraform apply
+ 2473  ls -l
+ 2474  terraform destroy
+ 2475  terraform apply
+ 2476  ls -ltr
+ 2477  cat backend.tf
+ 2478  ls -la
+ 2479  cat backend.tf
+ 2480  vim backend.tf
+ 2481  terraform init
+ 2482  terraform init -migrate-state
+ 2483  terraform plan
+ 2484  terraform apply
+ 2485  ls -l
+ 2486  cat main.tf
+ 2487  cat backend.tf
+ 2488  vim main.tf
+ 2489  terraform plan
+ 2490  terraform apply
+ 2491  vim main.tf
+ 2492  terraform apply
+ 2493  vim main.tf
+ 2494  terraform apply
+ 2495  vim main.tf
+ 2496  terraform fmt
+ 2497  cat main.tf
+ 2498  ls -l
+ 2499  cat main.tf
+ 2500  history
