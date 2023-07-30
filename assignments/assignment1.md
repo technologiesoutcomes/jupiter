@@ -11,8 +11,8 @@ c) VPC
 4) Terraform is directory-centric. What do you understand by this?
 
 5) A Terraform List data structure is defined as follows: ```cars = [2, 4, 6, 9, 12].```
-What is the elment on index position 0?
-What is the elment on index position 4?
+What is the element on index position 0?
+What is the element on index position 4?
 
 6) Read this Terraform interpolation document  - https://www.koding.com/docs/terraform/configuration/interpolation.html/
 
@@ -50,7 +50,7 @@ resource "aws_network_interface" "bar" {
 8) What is a Terraform provider?
 
 
-9) What happens what you run "terraform init"
+9) What happens what you run "terraform init"?
 
 
 10) Explain why it is a best practice to have your Terraform state in a centralised secure location.
