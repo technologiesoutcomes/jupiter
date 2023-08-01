@@ -1,24 +1,60 @@
 ### Assignment 1
 
+1) What do you understand by API (Application Programming Interface) in the context of AWS cloud?
 
-1) 5 things you have learnt that demonstrate the skill of taking initiatives and being resourceful as a DevOps engineer.
+2) Why might you want to run the "terraform apply" command with the auto-approve option?
 
-2) 5 things that will improve your productivity with working with computers as a DevOps engineer.
+3) AWS offers two areas in which you could create resources - public and private. Where are the following resources provisioned?
+a) S3 bucket
+b) EC2 instance
+c) VPC
 
-3) 5 things or behaviours that you will or have learnt that will improve your collaboration skills as a DevOps engineer.
+4) Terraform is directory-centric. What do you understand by this?
 
-4) 5 things or behaviours that you will or have learnt that will improve your communications skills as a DevOps engineer.
+5) A Terraform List data structure is defined as follows: ```cars = [2, 4, 6, 9, 12].```
+What is the element on index position 0?
+What is the element on index position 4?
 
-5) What is the difference between Git and GitHub?
+6) Read this Terraform interpolation document  - https://www.koding.com/docs/terraform/configuration/interpolation.html/
 
-6) You wish to connect your local Git to your personal GitHub account. What are the two pieces of information
-that you need to accomplish this?
+7)  Describe as best you can what this code does?
+```
+terraform {
+  backend "s3" {
+    bucket  = "technologiesoutcomes-terraform-backend"
+    encrypt = true
+    key     = "3tier-baseinfra.tfstate"
+    region  = "eu-west-1"
+    #dynamodb_table = "technologiesoutcomes-terraform-backend"
+  }
+}
 
-7) How many Git/GitHub videos have you watched on Youtube?  What did you learn from them?
 
-8) What do you understand by the terms Continuous Integration?
+data "terraform_remote_state" "remote" {
+  backend = "s3"
+  config =  {
+    bucket = "technologiesoutcomes-terraform-backend"
+    key = "3tier-baseinfra.tfstate"
+    region = "eu-west-1"
+  }
+}
 
-9) What is WSL and why is it our preferred working environment?
+resource "aws_network_interface" "bar" {
+  subnet_id       = "${data.terraform_remote_state.remote.outputs.public_subnets[0]}"
+  security_groups = [aws_security_group.ec2_web.id]
 
-10) Describe the role that a Source Code Management (SCM) system plays in an organisation.
+  tags = {
+    Name = "primary_network_interface"
+  }
+}
+```
+8) What is a Terraform provider?
+
+
+9) What happens what you run "terraform init"?
+
+
+10) Explain why it is a best practice to have your Terraform state in a centralised secure location.
+
+
 
