@@ -1,7 +1,9 @@
-### Terraform
+# Terraform
 
 
-Basic resource definitions
+### Basic resource definitions
+
+User for provisioning resources
 
 ```
 resource "aws_instance" "helloworld" {
@@ -27,9 +29,10 @@ resource "local_file" "literature" {
 }
 ```
 
+### Data resources
 
+Used for retrieving information from underlying infrastructure
 ```
-
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -51,12 +54,11 @@ data "aws_eks_cluster" "default" {
 data "aws_eks_cluster_auth" "default" {
   name = module.eks.cluster_id
 }
-
 ```
 
 
 ### variables
-
+Used to make code portable and configurable
 ```
 variable "words" {
   description = "A word pool to use for Mad Libs"
@@ -129,6 +131,7 @@ variable "cluster_autoscaling" {
 ```
 
 ### outputs
+Used to expose information from Terraform provisioned infrastructure
 Example output definitions
 
 ```
