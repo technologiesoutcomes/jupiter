@@ -69,7 +69,63 @@ variable "words" {
   })
 }
 
+variable "maintenance_exclusions" {
+  type        = list(object({ name = string, start_time = string, end_time = string, exclusion_scope = string }))
+  description = "List of maintenance exclusions. A cluster can have up to three"
+  default     = []
+}
 
+variable "maintenance_end_time" {
+  type        = string
+  description = "Time window specified for recurring maintenance operations in RFC3339 format"
+  default     = ""
+}
+
+variable "windows_node_pools" {
+  type        = list(map(string))
+  description = "List of maps containing Windows node pools"
+  default     = []
+}
+
+variable "node_pools_labels" {
+  type        = map(map(string))
+  description = "Map of maps containing node labels by node-pool name"
+
+  # Default is being set in variables_defaults.tf
+  default = {
+    all               = {}
+    default-node-pool = {}
+  }
+}
+
+
+variable "cluster_autoscaling" {
+  type = object({
+    enabled       = bool
+    min_cpu_cores = number
+    max_cpu_cores = number
+    min_memory_gb = number
+    max_memory_gb = number
+    gpu_resources = list(object({ resource_type = string, minimum = number, maximum = number }))
+    auto_repair   = bool
+    auto_upgrade  = bool
+    disk_size     = optional(number)
+    disk_type     = optional(string)
+  })
+  default = {
+    enabled       = false
+    max_cpu_cores = 0
+    min_cpu_cores = 0
+    max_memory_gb = 0
+    min_memory_gb = 0
+    gpu_resources = []
+    auto_repair   = true
+    auto_upgrade  = true
+    disk_size     = 100
+    disk_type     = "pd-standard"
+  }
+  description = "Cluster autoscaling configuration. See [more details](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#clusterautoscaling)"
+}
 ```
 
 ### outputs
