@@ -219,11 +219,11 @@ cluster_maintenance_window_is_daily     = length(local.cluster_maintenance_windo
 
 ### modules
 
-Modules are unit of Terraform code/logic that deliver a specific capability or infrastructure
-All working Terraform code are modules provided they are well-define and have a well defined interface (variable set)
-You can call local modules as well as external modules
-When calling a child module ensure all its mandatory variables are speficied, otherwise the call will fail
-From your parent module, you can output values that are also outputted in the child module.
+* Modules are unit of Terraform code/logic that deliver a specific capability or infrastructure
+* All working Terraform code are modules provided they are well-define and have a well defined interface (variable set)
+* You can call local modules as well as external modules
+* When calling a child module ensure all its mandatory variables are speficied, otherwise the call will fail
+* From your parent module, you can output values that are also outputted in the child module.
 
 ```
 module "autoscaling" {
@@ -305,5 +305,5 @@ terraform {
 
 ### Reference
 1) https://github.com/terraform-in-action/manning-code.git
-2) 
+
 
