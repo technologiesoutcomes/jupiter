@@ -52,6 +52,24 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"]
 }
 
+data "terraform_remote_state" "remote" {
+  backend = "s3"
+  config =  {
+    bucket = "technologiesoutcomes-<??????>-terraform-backend"
+    key = "network/baseinfra.tfstate"
+    region = "eu-west-1"
+  }
+}
+
+resource "aws_network_interface" "bar" {
+  subnet_id       = "${data.terraform_remote_state.remote.outputs.public_subnets[0]}"
+  security_groups = [aws_security_group.ec2_web.id]
+
+  tags = {
+    Name = "primary_network_interface"
+  }
+}
+
 ```
 
 ```
