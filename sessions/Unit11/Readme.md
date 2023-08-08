@@ -206,35 +206,45 @@ cluster_maintenance_window_is_daily     = length(local.cluster_maintenance_windo
 ```
 
 ### modules
+
+Modules are unit of Terraform code/logic that deliver a specific capability or infrastructure
+All working Terraform code are modules provided they are well-define and have a well defined interface (variable set)
+You can call local modules as well as external modules
+When calling a child module ensure all its mandatory variables are speficied, otherwise the call will fail
+From your parent module, you can output values that are also outputted in the child module.
+
 ```
 module "autoscaling" {
-  source      = "./modules/autoscaling" #A
-  namespace   = var.namespace #B
-    ssh_keypair = var.ssh_keypair #A
-
-  vpc       = module.networking.vpc #A
-  sg        = module.networking.sg #A
-  db_config = module.database.db_config #A
-
+  source      = "./modules/autoscaling"    ## calling local child module
+  namespace   = var.namespace  
+  ssh_keypair = var.ssh_keypair  
+  vpc       = module.networking.vpc  
+  sg        = module.networking.sg  
+  db_config = module.database.db_config  
 }
 
-module "database" {
-  source    = "./modules/database" #A
-  namespace = var.namespace #B
+output "autoscaling_name" {
+  description = "autoscaling"
+  value       = module.autoscaling.name
+}
 
-    vpc = module.networking.vpc #A
-  sg  = module.networking.sg #A
+
+module "database" {
+  source    = "./modules/database" ## calling local child module
+  namespace = var.namespace  
+  vpc = module.networking.vpc  
+  sg  = module.networking.sg  
 
 }
 
 module "networking" {
-  source    = "./modules/networking" #A
-  namespace = var.namespace #B
+  source    = "./modules/networking"  ## calling local child module
+  namespace = var.namespace  
 }
 
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "3.2.0"
+  source  = "terraform-aws-modules/vpc/aws" ## calling external child module
+  version = "3.2.0"    ## pinning to a specific version
 
   name                 = "education-vpc"
   cidr                 = "10.0.0.0/16"
@@ -260,6 +270,10 @@ module "vpc" {
   }
 }
 
+output "vpc_id" {
+  description = "vpc ID"
+  value       = module.vpc.vpc_id
+}
 
 ```
 
