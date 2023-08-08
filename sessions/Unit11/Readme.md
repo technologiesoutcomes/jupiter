@@ -277,7 +277,20 @@ output "vpc_id" {
 
 ```
 
+### Backend configuration
 
+```
+terraform {
+  backend "s3" {
+    bucket         = "techoutcomes-?????-terraform-backend"
+    encrypt        = true
+    key            = "eks/simpleeks-terraform.tfstate"
+    region         = "eu-west-1"
+    #dynamodb_table = "technologiesoutcomes-3tier-terraform-backend"
+  }
+}
+
+```
 
 
 
