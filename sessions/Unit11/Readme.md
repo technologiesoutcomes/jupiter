@@ -31,6 +31,12 @@ resource "local_file" "literature" {
 }
 ```
 
+```
+resource "null_resource" "mynull" {
+
+}
+```
+
 ### Data resources
 
 Used for retrieving information from underlying infrastructure
