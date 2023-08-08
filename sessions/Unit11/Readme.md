@@ -193,7 +193,7 @@ locals {
 ```
 
 ### functions
-
+https://developer.hashicorp.com/terraform/language/functions
 ```
 concat
 merge
