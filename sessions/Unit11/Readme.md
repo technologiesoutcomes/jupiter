@@ -285,7 +285,7 @@ terraform {
     encrypt        = true
     key            = "eks/simpleeks-terraform.tfstate"
     region         = "eu-west-1"
-    #dynamodb_table = "technologiesoutcomes-3tier-terraform-backend"
+    #dynamodb_table = "techoutcomes-3tier-terraform-backend"
   }
 }
 
