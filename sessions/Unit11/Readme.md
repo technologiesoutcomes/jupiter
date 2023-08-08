@@ -278,7 +278,6 @@ output "vpc_id" {
 ```
 
 ### Backend configuration
-
 ```
 terraform {
   backend "s3" {
