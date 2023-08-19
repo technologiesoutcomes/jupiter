@@ -3,16 +3,16 @@
 * False
 
 2) AWS IAM service is a global resource
-True
-False
+* True
+* False
 
 3) You have created an EC2 instance in a VPC in a public subnet. Which of the following is required to SSH to the instance from outside
 the VPC/Subnet. Select all relevant answers.
-a) Public IP address
-b) Private IP address
-c) NAT server
-d) A load balancer
-e) A security group configured to allow traffic on port 22
+* a) Public IP address
+* b) Private IP address
+* c) NAT server
+* d) A load balancer
+* e) A security group configured to allow traffic on port 22
 
 4) You have created an EC2 instance in a VPC in a private subnet. You want the instance to be able to connect to the internet to download 
 software updates. Which of the following must you configure to enable that?
