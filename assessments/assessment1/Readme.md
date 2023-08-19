@@ -126,25 +126,25 @@ Which of these approaches could you use to accomplish this task?
 * e) Through the Terraform console interface
 
 
-### Hands-on exercises
+# Hands-on exercises
 
-### 21) Hands-on exercise
+## 21) Hands-on exercise
 
-# Section A
+### Section A
 * Go to your technologiesoutcomes directory.
 * Create a directory called <b>quiz1</b>
 * Go into the <b>quiz1</b> directory
 * Initialise the directory as a git directory
 * Create a file called <b>quizzes</b> in the directory
 
-# Section B
+### Section B
 
 * Go to your GitHub account and create a repository called quiz1 (Do not select the option to create a Readme file).
 Copy the output of the creation and save somewhere
 
 * Go back to your local machine and run the git commands to push your local repository to the GitHub repository you created above.
 
-# Section C
+### Section C
 * Initialise the directory as a Terraform directory.
 * Create a file called nullresource.tf in the directory
 * Open the file nullresource.tf in an editor (vim) and copy and paste the following code in the nullresource.tf file and save and exit the file.
