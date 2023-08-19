@@ -126,9 +126,7 @@ Which of these approaches could you use to accomplish this task?
 * e) Through the Terraform console interface
 
 
-# Hands-on exercises
-
-## 21) Hands-on exercise
+# 21) Hands-on exercises
 
 ### Section A
 * Go to your technologiesoutcomes directory.
