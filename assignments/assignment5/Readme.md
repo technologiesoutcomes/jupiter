@@ -196,7 +196,5 @@ https://blog.brainboard.co/become-a-devops-engineer-in-2023-a-comprehensive-guid
 
 2. Terraform Up and Running.
 
-3. Kubernetes Patterns
-
-4. How to find Remote DevOps Full time Gigs https://sharonsahadevan.medium.com/learn-how-i-found-remote-devops-jobs-from-my-perspective-382c15514cd5
+3. How to find Remote DevOps Full time Gigs https://sharonsahadevan.medium.com/learn-how-i-found-remote-devops-jobs-from-my-perspective-382c15514cd5
 
