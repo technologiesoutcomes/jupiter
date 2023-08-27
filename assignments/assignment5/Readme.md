@@ -1,15 +1,5 @@
-# Assignment 2
+# Assignment 5
 
-Complete this assigment preferably as a team and submit on or before 19/05/2023. If you work as a team provide the names of all the individuals of the team. My name is abiodun olajide
-
-
-## Kubernetes, Docker, Containerisation and Virtualisation
-
-1. Containers and Virtual machines are two approaches to deploying applications. Name the advantages and disadvantages of each.
-
-2. What is a Docker image and how are they created?
-
-3. What is a Docker container and how might you run them?
 
 ## Linux administration and shell scripting
 
