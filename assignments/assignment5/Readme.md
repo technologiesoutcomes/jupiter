@@ -72,7 +72,9 @@ These contents will be written to the file.
 This line is indented.
 EOF
 ```
-   
+Then amend the script so that it appends into the file rather than overwrite the file.
+
+
 7. Write a bash shell script which when run will create a file called <b>myconfig.conf</b> with the following as content of the file.
 ```
 name=outcomer
