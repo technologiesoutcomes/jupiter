@@ -158,7 +158,9 @@ gender=male
 
 2. Read the blog article given in Reference 3 "How to find Remote DevOps Full time Gigs". To what extend do you agree or disagree with the main argument of the article?
 
-## New commands logs - Make a list of up to ten new commands you have learnt this week
+## New commands logs 
+
+1. Make a list of up to ten new commands you have learnt this week.
 
 
 ## Reference
