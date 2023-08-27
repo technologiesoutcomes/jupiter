@@ -63,6 +63,45 @@ Replace X with the number of parameters and Y with all parameters entered.
 Then replace A with the contents of variable ONE, B with variable TWO, and C
 with variable THREE.
 
+6. Research the concept of heredoc in shell scripting. Use this site as a resource - https://stackoverflow.com/questions/2953081/how-can-i-write-a-heredoc-to-a-file-in-bash-script
+7. Write a bash shell script which when run will create a file called <b>myconfig.conf</b> with the following as content of the file.
+```
+name=outcomer
+town=mytown
+class=seven
+gender=male
+```
+8. Write a bash script which will take a single argument and which when run will create a file called <b>myconfigparams.conf</b> with the following as content of the file. The argument should substitute the placeholder ????? below
+```
+name=?????
+town=mytown
+class=seven
+gender=male
+```
+
+9. The following scripts is used as part of user data in an EC2 instance provisioning. Analyse the script and explain what it is doing?
+```
+#!/bin/bash -xe
+     sudo apt-get update -y # good practice to update existing packages
+     sudo apt-get install -y awscli
+     sudo apt install -y jq 
+     sudo mkdir /etc/ssl/nginx
+     # install the key and secret 
+     aws secretsmanager get-secret-value --secret-id nginxcert --region ${AWS::Region} | jq --raw-output '.SecretString'| tr -d '"{}' | sudo tee /etc/ssl/nginx/nginx-repo.crt
+     aws secretsmanager get-secret-value --secret-id nginxkey --region ${AWS::Region} | jq --raw-output '.SecretString'| tr -d '"{}' | sudo tee /etc/ssl/nginx/nginx-repo.key
+     # Add the repo
+     sudo wget https://cs.nginx.com/static/keys/nginx_signing.key && sudo apt-key add nginx_signing.key 
+     sudo wget https://cs.nginx.com/static/keys/app-protect-security-updates.key && sudo apt-key add app-protect-security-updates.key
+     sudo apt-get install -y apt-transport-https lsb-release ca-certificates
+     printf "deb https://pkgs.nginx.com/plus/ubuntu `lsb_release -cs` nginx-plus\n" | sudo tee /etc/apt/sources.list.d/nginx-plus.list
+     sudo wget -P /etc/apt/apt.conf.d https://cs.nginx.com/static/files/90pkgs-nginx
+     # Install and start 
+     sudo apt-get update -y # good practice to update existing packages
+     sudo apt-get install nginx-plus -y # install web server   
+     sudo systemctl start nginx.service # start webserver
+```
+
+
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
 1. Read Chapter 1, page 1 - page 37 of the Terraform Up and Running book and with respect to your learning answer the following questions:
