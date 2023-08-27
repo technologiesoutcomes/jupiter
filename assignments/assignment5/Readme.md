@@ -63,7 +63,16 @@ Replace X with the number of parameters and Y with all parameters entered.
 Then replace A with the contents of variable ONE, B with variable TWO, and C
 with variable THREE.
 
-6. Research the concept of heredoc in shell scripting. Use this site as a resource - https://stackoverflow.com/questions/2953081/how-can-i-write-a-heredoc-to-a-file-in-bash-script
+6. Research the concept of heredoc in shell scripting. Use this site as a resource - https://stackoverflow.com/questions/2953081/how-can-i-write-a-heredoc-to-a-file-in-bash-script.
+Copy the below example script into a file and run it. What does it do?
+```
+#!/bin/bash
+cat << EOF > mynewfile
+These contents will be written to the file.
+This line is indented.
+EOF
+```
+   
 7. Write a bash shell script which when run will create a file called <b>myconfig.conf</b> with the following as content of the file.
 ```
 name=outcomer
