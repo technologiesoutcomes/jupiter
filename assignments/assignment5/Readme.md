@@ -156,37 +156,9 @@ gender=male
 
 1. Read the blog article given in Reference 1 (Become A DevOps Engineer in 2023: A Comprehensive Guide) and answer the following question. According to the author, what are the key technologies, tools and systems an aspiring DevOps should learn?
 
-2. Read the blog article given in Reference 4 "How to find Remote DevOps Full time Gigs". To what extend do you agree or disagree with the main argument of the article?
+2. Read the blog article given in Reference 3 "How to find Remote DevOps Full time Gigs". To what extend do you agree or disagree with the main argument of the article?
 
-## New commands logs - Enter up to ten new commands you have learnt this week
-
-| Number      | Commands | What does it do and how might you check its effect     |
-| :---        |    :----:   | :---  |
-| 1  | XXXXXXXX       | YYYYYYYY   |
-| 2  | XXXXXXXX       | YYYYYYYY   |
-| 3  | XXXXXXXX       | YYYYYYYY   |
-| 4  | XXXXXXXX       | YYYYYYYY   |
-| 5  | XXXXXXXX       | YYYYYYYY   |
-| 6  | XXXXXXXX       | YYYYYYYY   |
-| 7  | XXXXXXXX       | YYYYYYYY   |
-| 8  | XXXXXXXX       | YYYYYYYY   |
-| 9  | XXXXXXXX       | YYYYYYYY   |
-| 10 | XXXXXXXX       | YYYYYYYY   |
-
-## Glossary of the week - Enter new technical words you have learnt this week and their meanings.
-
-| Number   | Word | Meaning     |
-| :---     | :----:   |  :---  |
-| 1  | XXXXXXXX       | YYYYYYYY   |
-| 2  | XXXXXXXX       | YYYYYYYY   |
-| 3  | XXXXXXXX       | YYYYYYYY   |
-| 4  | XXXXXXXX       | YYYYYYYY   |
-| 5  | XXXXXXXX       | YYYYYYYY   |
-| 6  | XXXXXXXX       | YYYYYYYY   |
-| 7  | XXXXXXXX       | YYYYYYYY   |
-| 8  | XXXXXXXX       | YYYYYYYY   |
-| 9  | XXXXXXXX       | YYYYYYYY   |
-| 10 | XXXXXXXX       | YYYYYYYY   |
+## New commands logs - Make a list of up to ten new commands you have learnt this week
 
 
 ## Reference
