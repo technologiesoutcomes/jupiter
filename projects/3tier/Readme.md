@@ -8,3 +8,4 @@ Use the code from this repository as your starting point and make relevant chang
 https://github.com/technologiesoutcomes/projects/tree/main/3tiers/layered/terraform/base-infra
 
 ### 2.  Automate the deployment of the base infrastructure above form a GitHub Actions workflow
+Use the code in this repo as a model - https://github.com/technologiesoutcomes/gha-demo
