@@ -7,4 +7,4 @@ Details about subsequent phases will follow on this page.
 Use the code from this repository as your starting point and make relevant changes to build the base infra.
 https://github.com/technologiesoutcomes/projects/tree/main/3tiers/layered/terraform/base-infra
 
-### 2.
+### 2.  Automate the deployment of the base infrastructure above form a GitHub Actions workflow
