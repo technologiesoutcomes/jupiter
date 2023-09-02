@@ -3,11 +3,20 @@
 1.  Why is it generally considered bad practice to configure secrets for authentication on a CICD pipeline and how might you mitigate the risk it presents?
 2.  How would you organise your Github action pipeline so that you can pass artefacts from one job to another?
 3.  You are designing a Github Actions pipeline with 5 jobs that have to run in strict sequential order with one job depending on the previous one. How woud you organise this?
-4.  Research how the Github Actions ".extends" clause could be used to build re-useable templates.
+4.  Research how the Github Actions "extends" clause could be used to build re-useable templates.
 
 ### References 
 
 https://github.com/sdras/awesome-actions
+
+
+https://www.hatica.io/blog/github-actions-workflow-template/
+
+https://github.blog/2021-11-18-7-advanced-workflow-automation-features-with-github-actions/
+
+https://docs.github.com/en/actions/using-workflows/reusing-workflows
+
+https://github.blog/2022-02-10-using-reusable-workflows-github-actions/
 
 https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions
 
