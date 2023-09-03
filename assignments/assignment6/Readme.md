@@ -9,7 +9,6 @@
 
 https://github.com/sdras/awesome-actions
 
-
 https://www.hatica.io/blog/github-actions-workflow-template/
 
 https://github.blog/2021-11-18-7-advanced-workflow-automation-features-with-github-actions/
@@ -31,3 +30,18 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 https://levelup.gitconnected.com/github-actions-how-to-share-data-between-jobs-fc1547defc3e
 
 https://github.blog/2021-11-18-7-advanced-workflow-automation-features-with-github-actions/
+
+https://endjin.com/blog/2023/02/adventures-in-github-actions-ep01
+
+https://endjin.com/blog/2019/10/comparing-github-actions-and-azure-pipelines-high-level-concepts
+
+https://github.com/Lmooney25/shapes
+
+https://endjin.com/blog/2023/02/how-to-implement-continuous-deployment-of-python-packages-with-github-actions
+
+https://endjin.com/blog/2019/10/comparing-github-actions-and-azure-pipelines-high-level-concepts
+
+
+
+
+
