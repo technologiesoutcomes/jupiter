@@ -1,4 +1,4 @@
-### Basic commands
+### 1. Basic commands
 
 Run the following commands and observe and discuss what it does.
 ```
