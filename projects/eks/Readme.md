@@ -3,19 +3,19 @@ You are recruited as a DevOps engineer to join a team delivering containerised a
 
 For the organisation's leadership and tech teams to gain confidence in the technology choices, they have decided to proceed in the following manner.
 
-1.	<b>Phase One</b>: Design and implement a simple Proof-of-Concept (POC) that showcases the features and capabilities of GitHub Actions as a CICD tool for deploying containerised applications to AWS EKS. Use an image from a public image registry such as the games-2048 image and deploy it and exposed it to the outside world.
+1.	<b>Part One</b>: Design and implement a simple Proof-of-Concept (POC) that showcases the features and capabilities of GitHub Actions as a CICD tool for deploying containerised applications to AWS EKS. Use an image from a public image registry such as the games-2048 image and deploy it and exposed it to the outside world.
 
-2.	<b>Phase Two</b>: Having gained some understanding from the POC, design and implement a CICD pipeline that will automate the deployment of the team's java application onto the AWS EKS cluster, across three environments (Dev, UAT and Prod). There are multiple teams using the EKS cluster. In keeping with the principle of separation of responsibility it is important that each team's resources are only available to members of the team.
+2.	<b>Part Two</b>: Having gained some understanding from the POC, design and implement a CICD pipeline that will automate the deployment of the team's java application onto the AWS EKS cluster, across three environments (Dev, UAT and Prod). There are multiple teams using the EKS cluster. In keeping with the principle of separation of responsibility it is important that each team's resources are only available to members of the team.
 
-3.	<b>Phase Three</b>: The organisation is very quality and security conscious and would like these capabilities to be built into the delivery pipeline for testing and security scanning. Research what tools you could use and how you would integrate them into the pipeline.
+3.	<b>Part Three</b>: The organisation is very quality and security conscious and would like these capabilities to be built into the delivery pipeline for testing and security scanning. Research what tools you could use and how you would integrate them into the pipeline.
 
-4.	<b>Phase Four</b>: The Chief Security Officer, upon reviewing the design has requested that all interactions with the EKS control plane should NOT traverse the public internet. What steps would you take to implement this? See https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html
+4.	<b>Part Four</b>: The Chief Security Officer, upon reviewing the design has requested that all interactions with the EKS control plane should NOT traverse the public internet. What steps would you take to implement this? See https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html
 
-5.	<b>Phase Five</b>: The organisation is interested in operationalising a GitOps process for the Kubernetes cluster. Discuss what GitOps means, what tools could be used to implement a GitOps system and how you would go about it.
+5.	<b>Part Five</b>: The organisation is interested in operationalising a GitOps process for the Kubernetes cluster. Discuss what GitOps means, what tools could be used to implement a GitOps system and how you would go about it.
 
-6.	<b>Phase Six</b>: There is a requirement to run a periodic job on the cluster that will retrieve data from an on-premise database and process and save it onto an RDS instance. The job will be scheduled to run every Saturday at 1:00AM. Design the workflow.
+6.	<b>Part Six</b>: There is a requirement to run a periodic job on the cluster that will retrieve data from an on-premise database and process and save it onto an RDS instance. The job will be scheduled to run every Saturday at 1:00AM. Design the workflow.
 
-7.	<b>Phase Seven</b>: The team is keen to use semantic versioning to manage their release and would like you to help them with setting it up. Research Semantic Versioning and describe how you would implement it.
+7.	<b>Part Seven</b>: The team is keen to use semantic versioning to manage their release and would like you to help them with setting it up. Research Semantic Versioning and describe how you would implement it.
 
 Execute this project in a manner that showcases these key DevOps values
 
