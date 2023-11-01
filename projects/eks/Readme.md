@@ -24,5 +24,11 @@ Execute this project in a manner that showcases these key DevOps values
 * Team work through Collaboration and community participation
 * Technical excellency through learning from other works of excellency like blogs, articles and journals
 
+### References
+
+1. SonarQube - https://github.com/SonarSource/sonarcloud-github-action
+2. https://aws.amazon.com/blogs/mt/monitor-amazon-eks-control-plane-metrics-using-aws-open-source-monitoring-services/
+3. https://aws.amazon.com/blogs/apn/filter-and-stream-logs-from-amazon-s3-logging-buckets-into-splunk-using-aws-lambda/
+4. https://aws.amazon.com/blogs/compute/sending-and-receiving-webhooks-on-aws-innovate-with-event-notifications/
 
 
