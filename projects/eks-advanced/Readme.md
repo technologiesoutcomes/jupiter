@@ -11,3 +11,7 @@ git clone https://github.com/awslabs/data-on-eks.git
 
 3.  Navigate to the folder data-on-eks/ai-ml/jupyterhub and study the code (Terraform and shell script).
 4.  Learn how each of the key resources have been implemented in Terraform code.
+5.  Create your own repository following the above repository as a model and using Helm charts design and implement the installation of;
+   * RabbitMQ
+   * Jenkins
+   * PostgresQL
